@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agbe Joseph Keji | Administrative Support, Data Analytics and Digital Content</title>
+<meta name="description" content="Portfolio of Agbe Joseph Keji: administrative and executive support, data analytics (SQL, Python, Excel, Power BI), content creation and education. Based in Abuja, open to remote roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F8FB; --surface:#FFFFFF; --ink:#13203A; --muted:#51607A;
+  --line:#D9E0EA; --accent:#0B6E6E; --accent-ink:#FFFFFF; --mark:#F2B84B;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --text:"Instrument Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0E1626; --surface:#16213A; --ink:#EAF0FA; --muted:#A5B2C9;
+    --line:#2A3858; --accent:#4FD1C5; --accent-ink:#08202A; --mark:#F2B84B;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.65}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--mark);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* top bar */
+header.bar{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+header.bar .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+.brand{font-family:var(--display);font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem}
+nav a{color:var(--muted);text-decoration:none;margin-right:18px;font-size:.95rem;font-weight:500}
+nav a:last-child{margin-right:0}
+nav a:hover{color:var(--ink)}
+
+/* hero */
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.02;letter-spacing:-.025em;margin:0 0 20px}
+.hero .lede{font-size:1.2rem;color:var(--muted);max-width:34em;margin:0 0 28px}
+.roles{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px;padding:0;list-style:none}
+.roles li{border:1px solid var(--line);background:var(--surface);padding:5px 14px;border-radius:999px;font-size:.92rem;font-weight:500}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;text-decoration:none;font-size:1rem;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent);background:transparent}
+.btn:hover{transform:translateY(-1px)}
+.btn{transition:transform .15s}
+.portrait{aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:var(--surface);border:1px solid var(--line);position:relative;box-shadow:12px 12px 0 var(--mark)}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.portrait .initials{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:5rem;color:var(--accent)}
+
+/* sections */
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,4vw,2.3rem);letter-spacing:-.015em;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 32px;max-width:40em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+.card h3{font-family:var(--display);font-size:1.15rem;margin:0 0 6px}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+
+/* timeline */
+.timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--line)}
+.timeline li{position:relative;padding:0 0 30px 28px}
+.timeline li::before{content:"";position:absolute;left:-9px;top:7px;width:15px;height:15px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.timeline h3{font-family:var(--display);margin:0;font-size:1.2rem}
+.timeline .where{color:var(--muted);font-size:.95rem;margin:2px 0 8px;font-weight:500}
+.timeline ul{margin:0;padding-left:20px}
+.timeline li li{padding:0 0 4px;position:static}
+.timeline li li::before{display:none}
+
+/* certs */
+.certs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.certs li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.certs strong{display:block;font-weight:600;line-height:1.35}
+.certs span{color:var(--muted);font-size:.93rem}
+
+/* links */
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.links a.card{text-decoration:none;color:var(--ink)}
+.links a.card:hover{border-color:var(--accent)}
+.links .card p{color:var(--accent);font-weight:600;overflow-wrap:anywhere}
+
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.92rem}
+
+@media (max-width:760px){
+  .hero{padding-top:44px}
+  .hero .wrap{grid-template-columns:1fr}
+  .portrait{max-width:300px;order:-1}
+  nav a{margin-right:14px}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">Agbe Joseph Keji</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Organised support, clear data, strong content.</h1>
+      <p class="lede">I am Joseph, based in Abuja and open to remote roles. I bring seven years of school administration, teaching and community leadership, now combined with data analytics and digital content skills.</p>
+      <ul class="roles" aria-label="Roles I am open to">
+        <li>Personal and virtual assistant</li>
+        <li>Data analyst</li>
+        <li>HR and admin support</li>
+        <li>Social media and content</li>
+        <li>ICT support</li>
+        <li>Training and education</li>
+      </ul>
+      <div class="actions">
+        <a class="btn primary" href="Agbe_Joseph_Keji_CV.pdf" download>Download my CV</a>
+        <a class="btn ghost" href="https://wa.me/2348070921252" target="_blank" rel="noopener">Message me on WhatsApp</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="initials" aria-hidden="true">AJ</div>
+      <!-- Add your photo: save it as photo.jpg in the same folder as this file -->
+      <img src="photo.jpg" alt="Portrait of Agbe Joseph Keji" onerror="this.remove()">
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <p class="sub">A reliable professional who keeps work organised, explains things clearly and learns new tools quickly.</p>
+    <p style="max-width:42em;margin:0 0 14px">I hold a B.Ed in Mathematics Education from Lagos State University. I have taught Mathematics, Physics and Geography, worked five years as an administrative officer at Lyceum College, and led youth organisations and community teams.</p>
+    <p style="max-width:42em;margin:0">Today I am building my career in data analytics with SQL, Python, Excel and Power BI, and I create content on YouTube and TikTok. I have also written books and curriculum materials, so clear writing is part of everything I do.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>What I can do for your team</h2>
+    <p class="sub">Practical skills, backed by certifications and real work.</p>
+    <div class="grid">
+      <div class="card"><h3>Administration and executive support</h3><p>Records, scheduling, correspondence, meeting notes, document preparation and office coordination.</p></div>
+      <div class="card"><h3>Human resources support</h3><p>Staff and student records, documentation, team coordination, role definitions and internal communication.</p></div>
+      <div class="card"><h3>Data analytics</h3><p>SQL, Python, advanced Excel and Power BI dashboards for cleaning, analysing and reporting data.</p></div>
+      <div class="card"><h3>Content and social media</h3><p>Planning, scripting, editing and publishing video and posts with CapCut and Canva, plus Google performance ads training.</p></div>
+      <div class="card"><h3>ICT and digital tools</h3><p>Google Workspace, Microsoft Office, Notion, Zoom and generative AI tools for everyday work.</p></div>
+      <div class="card"><h3>Teaching and writing</h3><p>Lesson design, exam preparation, mentoring, manuscript writing and editing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!--
+  TO ADD A PROJECT LATER: copy a block like the one below into a new section.
+  <section id="projects"><div class="wrap"><h2>Projects</h2>
+  <div class="grid">
+    <div class="card"><h3>Project name</h3><p>The question you answered, the tools you used and what you found.</p>
+    <p><a href="PROJECT_LINK">View project</a></p></div>
+  </div></div></section>
+-->
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <p class="sub">From newest to oldest.</p>
+    <ol class="timeline">
+      <li>
+        <h3>Content Creator</h3>
+        <div class="where">Houseofen-gedi on YouTube, TikTok and Facebook</div>
+        <ul>
+          <li>Plan, script, record, edit and publish videos and posts.</li>
+          <li>Manage posting schedules, captions, thumbnails and audience engagement.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Teacher of Physics, Geography and Mathematics</h3>
+        <div class="where">JOFAM INT'L ACADEMY</div>
+        <ul>
+          <li>Taught senior secondary students and prepared them for external exams.</li>
+          <li>Produced lesson plans, lesson notes and SS1 to SS2 exam papers.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Administrative Officer</h3>
+        <div class="where">Lyceum College, 2020 to 2025</div>
+        <ul>
+          <li>Managed school records, correspondence and documentation.</li>
+          <li>Supported staff with scheduling, reporting and communication with parents.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Mathematics Teacher</h3>
+        <div class="where">Allied College, 2018 to 2020</div>
+        <ul>
+          <li>Taught Mathematics and Further Mathematics and trained students for WAEC and NECO.</li>
+          <li>Coached students to 4th place in Ogun State at the 2022 Our Generation Foundation mathematics competition.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Leadership and community roles</h3>
+        <div class="where">Atayero Youth Organization, RCCG Lagos Province 1 and Ifesowapo Community Development Area</div>
+        <ul>
+          <li>Leader of Atayero Youth Organization, defining roles for 17 youth executives.</li>
+          <li>Youth President, RCCG Lagos Province 1, 2019 to 2023.</li>
+          <li>Financial Secretary, Ifesowapo Community Development Area.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Books and writing</h2>
+    <p class="sub">Long form writing from first draft to ISBN application.</p>
+    <div class="grid">
+      <div class="card"><h3>Celestial Not Terrestrial</h3><p>A call to holiness for the Church of God. Author of a full 12 chapter manuscript with appendices.</p></div>
+      <div class="card"><h3>Delay Is Not Denial</h3><p>Worked on the manuscript and multi volume series, with a 100 prayer points companion booklet.</p></div>
+      <div class="card"><h3>The Man God Sent</h3><p>A biography of Rev. S.B.J. Oshoffa, currently in progress.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <h2>Certifications and education</h2>
+    <p class="sub">Eleven certifications and a degree programme, completed between 2024 and 2026.</p>
+    <ul class="certs">
+      <li><strong>B.Ed, Mathematics Education</strong><span>Lagos State University</span></li>
+      <li><strong>BSc (Honours), Data Science and Artificial Intelligence</strong><span>IIT Guwahati, completed 2024</span></li>
+      <li><strong>AI Powered Performance Ads Certification</strong><span>Skillshop (Google), Oct 2026</span></li>
+      <li><strong>Campaign Manager 360 Certification (2026)</strong><span>Skillshop (Google), Oct 2026</span></li>
+      <li><strong>Generative AI Training, AI NOW BootCamp 2026</strong><span>Incubator, Jul 2026</span></li>
+      <li><strong>Create Digital Content, Communicate and Collaborate Online</strong><span>Cisco, Apr 2026</span></li>
+      <li><strong>Strategic Career Development and Career Excellence</strong><span>CIPM Nigeria, Oct 2025</span></li>
+      <li><strong>Applied Data Science with Python</strong><span>University of Michigan (Coursera), May 2024</span></li>
+      <li><strong>Business Analytics with Excel</strong><span>Johns Hopkins University, Apr 2024</span></li>
+      <li><strong>Microsoft Power BI Data Analyst Professional Certificate</strong><span>Microsoft, Apr 2024</span></li>
+      <li><strong>Getting Started with Microsoft Excel</strong><span>Coursera, Feb 2024</span></li>
+      <li><strong>Introduction to Microsoft Excel</strong><span>Coursera, Feb 2024</span></li>
+      <li><strong>Introduction to Data Analytics with Python</strong><span>Alison, Feb 2024</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Let us work together</h2>
+    <p class="sub">I am open to new roles. The quickest way to reach me is WhatsApp or email.</p>
+    <div class="links">
+      <a class="card" href="https://wa.me/2348070921252" target="_blank" rel="noopener"><h3>WhatsApp</h3><p>+234 807 092 1252</p></a>
+      <a class="card" href="mailto:agbede.joseph.001@gmail.com"><h3>Email</h3><p>agbede.joseph.001@gmail.com</p></a>
+      <a class="card" href="https://tinyurl.com/Houseofen-gediYT" target="_blank" rel="noopener"><h3>YouTube</h3><p>Watch my content</p></a>
+      <a class="card" href="https://tinyurl.com/Houseofen-gediTT" target="_blank" rel="noopener"><h3>TikTok</h3><p>Follow my content</p></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Agbe Joseph Keji. Abuja, Nigeria.</div>
+</footer>
+
+</body>
+</html>
