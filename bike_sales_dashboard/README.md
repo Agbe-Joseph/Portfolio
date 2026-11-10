@@ -1,1 +1,1 @@
-bike_sales_dashboard.png
+bike-sales-dashboard.png
