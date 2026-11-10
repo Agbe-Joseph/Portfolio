@@ -1,1 +1,1 @@
-Bike Sales Dashboard
+bike_sales_dashboard.png
